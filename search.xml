@@ -11,6 +11,18 @@
         <content type="html"><![CDATA[<h2 id="初始化Git-仓库"><a href="#初始化Git-仓库" class="headerlink" title="初始化Git 仓库"></a>初始化Git 仓库</h2><ul><li>命令：<code>git init</code></li></ul><h2 id="配置使用者"><a href="#配置使用者" class="headerlink" title="配置使用者"></a>配置使用者</h2><ul><li>用户名：<code>git config --global user.name &#39;hct&#39;</code></li><li>邮箱：<code>git config --global user.email &#39;hct@qq.com&#39;</code></li></ul><h2 id="把代码放到-git仓库中"><a href="#把代码放到-git仓库中" class="headerlink" title="把代码放到.git仓库中"></a>把代码放到<code>.git</code>仓库中</h2><ol><li><code>git add ./readme.md</code> 将代码放入暂存区</li><li><code>git commit -m &#39;说明&#39;</code> 以上两条命令将代码放入本地仓库</li></ol><ul><li><code>git add ./</code>将修改过的文件一次性提交到暂存区</li><li><code>git commit --all -m &#39;说明&#39;</code>将修改的代码一次性提交到本地仓库（跳过先放入暂存区直接放入本地仓库）</li></ul><h2 id="查看状态"><a href="#查看状态" class="headerlink" title="查看状态"></a>查看状态</h2><ul><li><code>git status</code></li></ul><h2 id="查看日志"><a href="#查看日志" class="headerlink" title="查看日志"></a>查看日志</h2><ul><li><code>git log</code></li><li><code>git log --oneline</code></li><li><code>git reflog</code>可以查看每一次切换版本的记录</li></ul><h2 id="回退版本"><a href="#回退版本" class="headerlink" title="回退版本"></a>回退版本</h2><ul><li><code>git reset --hard Head~0</code> 往前回退一次</li><li><code>git reset --hard Head~1</code> 往前回退两次</li><li><code>git reset --hard [版本号]</code>通过版本号可以精确的回退到某一次提交时的状态</li></ul><h2 id="gitignore忽略文件"><a href="#gitignore忽略文件" class="headerlink" title=".gitignore忽略文件"></a><code>.gitignore</code>忽略文件</h2><ul><li>被忽略的文件不会被提交到仓库里去</li><li>在<code>.gitignore</code>中可以书写要被忽略的文件的路径，以<code>/</code>开头，一行写一个路径，这些路径把对应的文件都会被忽略，不会被提交到仓库中</li><li>写法<ul><li><code>/.idea</code>会忽略.idea文件</li><li><code>/js</code>会忽略js目录里的所有文件</li><li><code>/js/*.js</code>会忽略js目录下所有js文件</li></ul></li></ul><h2 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h2><ul><li><code>git branch 分支名</code>创建分支<ul><li><code>git branch dev</code> 创建名为dev的分支</li></ul></li><li><code>git branch</code> 查看有哪些分支,分支前有<code>*</code>号就是当前分支<h2 id="切换分支"><a href="#切换分支" class="headerlink" title="切换分支"></a>切换分支</h2></li><li><code>git checkout 分支名</code>切换分支<ul><li><code>git checkout dev</code> 切换到dev分支<h2 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h2></li></ul></li><li><code>git merge 分支名</code><ul><li>当前是master分支，<code>git merge dev</code>意思是将dev分支合并到当前分支（master）</li></ul></li></ul>]]></content>
       
       
+      <categories>
+          
+          <category> git操作 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
       
     </entry>
     
