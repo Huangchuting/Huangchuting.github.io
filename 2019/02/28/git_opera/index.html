@@ -4,8 +4,13 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, HCT&#39;s Blog">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="git的常规操作, HCT&#39;s Blog">
+    <meta name="description" content="初始化Git 仓库
+命令：git init
+
+配置使用者
+用户名：git config --global user.name &amp;#39;hct&amp;#39;
+邮箱：git config --global user.email &amp;#39;hct@">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +18,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hello World | HCT&#39;s Blog</title>
+    <title>git的常规操作 | HCT&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -257,13 +262,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Hello World
+                        git的常规操作
                     </div>
                 </div>
             </div>
@@ -353,12 +358,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/git/" target="_blank">
+                                <span class="chip bg-color">git</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/工具/" class="post-category" target="_blank">
+                                工具
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -382,19 +400,103 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span>
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy
-</code></pre>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+                <h2 id="初始化Git-仓库"><a href="#初始化Git-仓库" class="headerlink" title="初始化Git 仓库"></a>初始化Git 仓库</h2><ul>
+<li>命令：<code>git init</code></li>
+</ul>
+<h2 id="配置使用者"><a href="#配置使用者" class="headerlink" title="配置使用者"></a>配置使用者</h2><ul>
+<li>用户名：<code>git config --global user.name &#39;hct&#39;</code></li>
+<li>邮箱：<code>git config --global user.email &#39;hct@qq.com&#39;</code></li>
+</ul>
+<h2 id="把代码放到-git仓库中"><a href="#把代码放到-git仓库中" class="headerlink" title="把代码放到.git仓库中"></a>把代码放到<code>.git</code>仓库中</h2><ol>
+<li><code>git add ./readme.md</code> 将代码放入暂存区</li>
+<li><code>git commit -m &#39;说明&#39;</code> 以上两条命令将代码放入本地仓库</li>
+</ol>
+<ul>
+<li><code>git add ./</code>将修改过的文件一次性提交到暂存区</li>
+<li><code>git commit --all -m &#39;说明&#39;</code>将修改的代码一次性提交到本地仓库（跳过先放入暂存区直接放入本地仓库）</li>
+</ul>
+<h2 id="查看状态"><a href="#查看状态" class="headerlink" title="查看状态"></a>查看状态</h2><ul>
+<li><code>git status</code></li>
+</ul>
+<h2 id="查看日志"><a href="#查看日志" class="headerlink" title="查看日志"></a>查看日志</h2><ul>
+<li><code>git log</code></li>
+<li><code>git log --oneline</code></li>
+<li><code>git reflog</code>可以查看每一次切换版本的记录</li>
+</ul>
+<h2 id="回退版本"><a href="#回退版本" class="headerlink" title="回退版本"></a>回退版本</h2><ul>
+<li><code>git reset --hard Head~0</code> 往前回退一次</li>
+<li><code>git reset --hard Head~1</code> 往前回退两次</li>
+<li><code>git reset --hard [版本号]</code>通过版本号可以精确的回退到某一次提交时的状态</li>
+</ul>
+<h2 id="gitignore忽略文件"><a href="#gitignore忽略文件" class="headerlink" title=".gitignore忽略文件"></a><code>.gitignore</code>忽略文件</h2><ul>
+<li>被忽略的文件不会被提交到仓库里去</li>
+<li>在<code>.gitignore</code>中可以书写要被忽略的文件的路径，以<code>/</code>开头，一行写一个路径，这些路径把对应的文件都会被忽略，不会被提交到仓库中</li>
+<li>写法<ul>
+<li><code>/.idea</code>会忽略.idea文件</li>
+<li><code>/js</code>会忽略js目录里的所有文件</li>
+<li><code>/js/*.js</code>会忽略js目录下所有js文件</li>
+</ul>
+</li>
+</ul>
+<h2 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h2><ul>
+<li><code>git branch 分支名</code>创建分支<ul>
+<li>示例：<code>git branch dev</code> 创建名为dev的分支</li>
+</ul>
+</li>
+<li><code>git branch</code> 查看有哪些分支,分支前有<code>*</code>号就是当前分支<h2 id="切换分支"><a href="#切换分支" class="headerlink" title="切换分支"></a>切换分支</h2></li>
+<li><code>git checkout 分支名</code>切换分支<ul>
+<li>示例：<code>git checkout dev</code> 切换到dev分支<h2 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h2></li>
+</ul>
+</li>
+<li><code>git merge 分支名</code><ul>
+<li>示例：当前是master分支，<code>git merge dev</code>意思是将dev分支合并到当前分支（master）</li>
+<li>合并时如果有冲突，只能手动解决，然后再提交<h2 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h2></li>
+</ul>
+</li>
+<li><code>git branch -d 分支名</code><ul>
+<li>示例：<code>git branch -d dev</code> 删除dev分支</li>
+</ul>
+</li>
+</ul>
+<h2 id="github"><a href="#github" class="headerlink" title="github"></a><code>github</code></h2><h2 id="提交代码"><a href="#提交代码" class="headerlink" title="提交代码"></a>提交代码</h2><ul>
+<li><code>git push [地址] 分支名</code><ul>
+<li>示例：<code>git push git@github.com:xxx/projectname.git master</code> 将代码提交到github上xxx项目的master分支上</li>
+</ul>
+</li>
+</ul>
+<h2 id="拉取代码"><a href="#拉取代码" class="headerlink" title="拉取代码"></a>拉取代码</h2><ul>
+<li><code>git pull [地址] master</code> 拉取远程仓库的代码</li>
+<li><code>git clone [地址]</code> 第一次拉取远程仓库的代码，如果多次执行会覆盖本地内容</li>
+</ul>
+<h2 id="pull和push的简写"><a href="#pull和push的简写" class="headerlink" title="pull和push的简写"></a><code>pull</code>和<code>push</code>的简写</h2><ul>
+<li><code>git remote add origin [地址]</code>也远程仓库建立连接不用每次都输入地址<ul>
+<li><code>origin</code>只是一个变量</li>
+</ul>
+</li>
+<li><code>git push origin master</code></li>
+<li><code>git push origin -u master</code></li>
+<li>之后就可以开始用简写形式了<ul>
+<li>拉取代码用<code>git pull</code></li>
+<li>提交代码用<code>git push</code></li>
+<li>要注意当前提交的分支名</li>
+</ul>
+</li>
+</ul>
+<h2 id="ssh方式上传"><a href="#ssh方式上传" class="headerlink" title="ssh方式上传"></a>ssh方式上传</h2><ul>
+<li>公钥 私钥，两者之间是有关联</li>
+<li>生成公钥和私钥<ul>
+<li><code>ssh-keygen -t rsa -C &#39;xxxx@qq.com&#39;</code></li>
+<li>可以到电脑<code>.ssh</code>上找到下面两个文件</li>
+<li><code>id_rsa</code>—私钥</li>
+<li><code>id_rsa.pub</code>—公钥</li>
+</ul>
+</li>
+<li>到github设置公钥<ul>
+<li>到Settings找到ssh</li>
+<li>将<code>id_rsa.pub</code>上的内容复制到对应的位置即可</li>
+</ul>
+</li>
+</ul>
 
             </div>
             <hr>
@@ -542,7 +644,7 @@
                     </span>
                     <a href="https://huangchuting.github.io" class="b-link-green">HCT's Blog</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/02/28/hello-world/" class="b-link-green">Hello World</a>
+                    <a href="/2019/02/28/git_opera/" class="b-link-green">git的常规操作</a>
                 </p>
             </div>
         </div>
@@ -565,7 +667,8 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/02/28/git_opera/">
                     <div class="card-image">
@@ -584,9 +687,9 @@
 用户名：git config --global user.name &#39;hct&#39;
 邮箱：git config --global user.email &#39;hct@</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-28
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-02-28
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -599,6 +702,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -614,7 +718,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2019/02/28/hello-world/">
@@ -640,7 +744,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
